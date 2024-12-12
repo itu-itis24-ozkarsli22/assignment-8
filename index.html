@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7db;
+            margin: 20px;
+        }
+        #input-box {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+        #name-display {
+            color: #000;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        #github-logo {
+            display: block;
+            margin: 20px auto;
+        }
+        #course-list {
+            background-color: #bde9e9;
+            border: 2px solid purple;
+            padding: 15px;
+            width: 50%;
+            margin: 20px auto;
+        }
+        h4 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter your name:</h1>
+    <input id="input-box" type="text" onkeyup="updateName()" placeholder="Type your name here...">
+    <div id="name-display">
+        <p>Erhan Burak Özkarslı</p>
+        <p>150220744</p>
+    </div>
+    <a href="https://github.com">
+        <img id="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="100">
+    </a>
+    <div id="course-list">
+        <h4>Courses that I am taking</h4>
+        <ol>
+            <li><strong>BBF 101E - Introduction to Information Systems</strong></li>
+            <li>BBF102E -Linear Algebra</li>
+            <li>YZV103E - AI and ethics</li>
+            <li>ING100 - english</li>
+            <li>MAT104E - Matemathics</li>
+            <li>FIZ102E - physics I</li>
+        </ol>
+    </div>
+    <script>
+        function updateName() {
+            const inputBox = document.getElementById('input-box');
+            const nameDisplay = document.getElementById('name-display');
+            const name = inputBox.value || "Erhan Burak Özkarslı"; // Varsayılan isim
+            nameDisplay.innerHTML = `<p>${name}</p><p>50421538</p>`;
+        }
+    </script>
+</body>
+</html>
+
