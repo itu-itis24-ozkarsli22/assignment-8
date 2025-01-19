@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Prediction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Memory Game: </h1>
+    </header>
+    <main>
+        <section>
+            <p>Guess the word by entering letters or the full word!</p>
+            <div id="game-board">
+                <!-- Cards for the word will be dynamically generated here -->
+            </div>
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="Enter a letter or word">
+                <button id="submit-button">Submit</button>
+                <button id="reset-button">Reset Game</button>
+            </div>
+            <div id="game-stats">
+                <p>Score: <span id="score">0</span></p>
+                <p>Lives: <span id="lives">5</span></p>
+            </div>
+            <div id="lives-display">
+                <!-- Lives (hearts) will be displayed here -->
+            </div>
+            <p id="feedback"></p>
+        </section>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,162 +1,24 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-
-<html>
-    <head>
-        <title>My Web Page</title>
-    </head>
-</html>
-
-<body>
-    <em>Burak Özkarsli</em><br>
-    <em>150220744</em>
-</body>
-
-<a href="https://github.com/itu-itis24-ozkarsli22">
-    <img src="github_icon.png" alt="GitHub Icon" width="50" height="50">
-</a>
-
-<h4>Courses that I am taking</h4>
-<ol>
-    <li><strong>BBF 101E - Introduction to Information Systems</li>
-    
-</ol>
-
-<h1><strong>Bees</strong></h1>
-<p>The Universe of Bees</p>
-<ul> 
-    <li>Apis Mellifera</li>
-    <li>Agapostemon</li>
-    <li>Halictus</li>
-    <li>Colletes</li>
-    <li>Apidae
-        <ul>
-            <li>Bombus</li>
-        </ul>
-    </li>
-</ul>
-<p>
-    <img src="bees.jpg" alt="Bees Image">
-    <a href="https://en.wikipedia.org/wiki/Bee">Click here for more information</a>
-</p>
-
-<table>
-    <tr>
-        <th>Family</th>
-        <th>Genus</th>
-    </tr>
-    <tr>
-        <td>Apidae</td>
-        <td>Apis</td>
-    </tr>
-    <tr>
-        <td>Halictidae</td>
-        <td>Agapostemon</td>
-    </tr>
-    <tr>
-        <td>Halictidae</td>
-        <td>Halictus</td>
-    </tr>
-    <tr>
-        <td>Colletidae</td>
-        <td>Colletes</td>
-    </tr>
-    <tr>
-        <td>Apidae</td>
-        <td>Bombus</td>
-    </tr>
-</table>
-
-<pre>
-    Are you a beekeeper?
-
-    This web page is right for you! I hope you enjoy it.
-</pre>itü arı arı itü
-
-
-
-
-=======
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff7db;
-            margin: 20px;
-        }
-        #input-box {
-            padding: 10px;
-            font-size: 16px;
-            width: 300px;
-        }
-        #name-display {
-            color: #000;
-            font-size: 18px;
-            margin-top: 10px;
-        }
-        #github-logo {
-            display: block;
-            margin: 20px auto;
-        }
-        #course-list {
-            background-color: #bde9e9;
-            border: 2px solid purple;
-            padding: 15px;
-            width: 50%;
-            margin: 20px auto;
-        }
-        h4 {
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Enter your name:</h1>
-    <input id="input-box" type="text" onkeyup="updateName()" placeholder="Type your name here...">
-    <div id="name-display">
-        <p>Erhan Burak Özkarslı</p>
-        <p>150220744</p>
-    </div>
-    <a href="https://github.com">
-        <img id="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="100">
-    </a>
-    <div id="course-list">
-        <h4>Courses that I am taking</h4>
-        <ol>
-            <li><strong>BBF 101E - Introduction to Information Systems</strong></li>
-            <li>BBF102E -Linear Algebra</li>
-            <li>YZV103E - AI and ethics</li>
-            <li>ING100 - english</li>
-            <li>MAT104E - Matemathics</li>
-            <li>FIZ102E - physics I</li>
-        </ol>
-    </div>
-    <script>
-        function updateName() {
-            const inputBox = document.getElementById('input-box');
-            const nameDisplay = document.getElementById('name-display');
-            const name = inputBox.value || "Erhan Burak Özkarslı"; // Varsayılan isim
-            nameDisplay.innerHTML = `<p>${name}</p><p>50421538</p>`;
-        }
-    </script>
-
-<h1>Welcome to My Website</h1>
-<p>This page contains information about bees and courses.</p>
-
-<!-- Oyuna yönlendiren bir buton -->
-<a href="Reversegame/index.html">
-    <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Play Reverse Game
-    </button>
-</a>
-
-
+    <header>
+        <h1>Welcome to My Project</h1>
+    </header>
+    <main>
+        <section>
+            <img src="fotopraffff.png" alt="My Photo">
+            <h2>Erhan Burak Özkarslı</h2>
+            <p>Student Number: 150220744</p>
+            <p>I am a student at Istanbul Technical University. I am 22 years old.</p>
+            <p>Academic Interests: Coding, Data Analysis</p>
+            <button onclick="location.href='game.html'">Play Word Prediction Game</button>
+        </section>
+    </main>
 </body>
 </html>
-
->>>>>>> c2d775a (First commit: Added index.html with onkeyup event)
-
